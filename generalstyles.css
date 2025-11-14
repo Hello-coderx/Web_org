@@ -1,0 +1,147 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+header, nav, footer {
+    background-color: #1e90ff;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.section div {
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    text-align: center;
+    margin-top: 10%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    background-color: #1e90ff;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #1565c0;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 10%;
+}
+
+.product-card {
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    margin: 15px 0 10px 0;
+    color: #1e90ff;
+}
+
+.product-card p {
+    padding: 0 15px 15px 15px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .products-container {
+        grid-template-columns: 1fr;
+    }
+}
+.welcome{
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+    animation: moveText 5s linear infinite;
+}
+@keyframes moveText{
+0%{left: -100%;}
+100%{left: 100%;}
+}
